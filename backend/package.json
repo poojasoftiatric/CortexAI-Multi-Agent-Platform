@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently -n \"gateway,auth,chat,agent,billing\" -c \"blue,green,magenta,yellow,cyan\" \"npm run dev --prefix gateway\" \"npm run dev --prefix services/auth\" \"npm run dev --prefix services/chat\" \"npm run dev --prefix services/agent\" \"npm run dev --prefix services/billing\"",
+    "start": "concurrently -n \"gateway,auth,chat,agent,billing\" -c \"blue,green,magenta,yellow,cyan\" \"npm run start --prefix gateway\" \"npm run start --prefix services/auth\" \"npm run start --prefix services/chat\" \"npm run start --prefix services/agent\" \"npm run start --prefix services/billing\""
+  },
+  "dependencies": {
+    "ioredis": "^5.11.1"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}

@@ -1,0 +1,80 @@
+# =========================
+# Dependencies
+# =========================
+node_modules/
+**/node_modules/
+
+# =========================
+# Environment Files (SECRETS)
+# =========================
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+**/.env
+**/.env.*
+**/.env.local
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
+!**/.env.example
+
+# =========================
+# Firebase & Cloud Keys (SECRETS)
+# =========================
+serviceAccountKey.json
+**/serviceAccountKey.json
+*serviceAccountKey*.json
+*firebase-adminsdk*.json
+credentials.json
+**/credentials.json
+*.pem
+*.key
+*.cert
+
+# =========================
+# Temporary & Generated Files
+# =========================
+temp/
+**/temp/
+tmp/
+**/tmp/
+*.pdf
+*.pptx
+
+# =========================
+# Logs
+# =========================
+logs/
+**/logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# =========================
+# Build Outputs
+# =========================
+dist/
+**/dist/
+build/
+**/build/
+coverage/
+**/coverage/
+.vite/
+**/.vite/
+
+# =========================
+# IDE & System Files
+# =========================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
